@@ -1,0 +1,19 @@
+regex:
+^(?<name>\w+),\s*(?<age>[0-9][0-9]|1[0-9][0-9]),\s*(?<country>\w+),\s*(?<city>.*)
+
+groups:
+name, age, country and city
+
+tests:
+Jobson, 109, Brazil, São Paulo
+result: (name: Jobson, age: 109, country: Brazil, city: São Paulo)
+
+Regina, 35, Brazil, Rio de Janeiro
+result: (name: Regina, age: 35, country: Brazil, city: Rio de Janeiro)
+
+Matheus, 12, Brazil, Itajai
+result: (name: Matheus, age: 12, country: Brazil, city: Itajai)
+
+Sergio, 50, Brazil, Curitiba
+result: (name: Sergio, age: 50, country: Brazil, city: Curitiba)
+
