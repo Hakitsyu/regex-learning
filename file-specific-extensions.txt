@@ -1,0 +1,21 @@
+regex:
+^(?<fileName>\w+).(?<fileExtension>html|css|js)
+
+specific extensions:
+html, css, js
+
+groups:
+fileName and fileExtension
+
+tests:
+test.html
+result: (fileName: test, fileExtension: html)
+
+only_test.js
+result: (fileName: only_test, fileExtension: js)
+
+hello_world.html
+result: (fileName: hello_world, fileExtension: html)
+
+style.css
+result: (fileName: style, fileExtension: css)
